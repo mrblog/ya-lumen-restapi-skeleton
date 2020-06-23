@@ -1,0 +1,38 @@
+[
+        {
+            "CourseID": "2310",
+            "CourseTitle": "Closing the Round",
+            "CourseDescrip": "It's time to put all your hard work into practice. Getting investors on board to raise a round is like herding cats. Here you'll learn how to getting warm intros, conduct investor conversations, and conduct a FOMO-producing fundraising process.",
+            "Path": "FUNDRAISING"
+        },
+        {
+            "CourseID": "2320",
+            "CourseTitle": "Investor Conversations",
+            "CourseDescrip": "What's the best way to have a conversation with an investor. How will you handle tough questions that you'r rather not answer? This course will provide some tools to help you navigate this important part of fundraising.",
+            "Path": "FUNDRAISING"
+        },
+        {
+            "CourseID": "2330",
+            "CourseTitle": "Term Sheets and Trends",
+            "CourseDescrip": "Is the term sheet you were offered a good deal? Find out how to evaluate the terms and which ones you should push back on and which ones are \"normal\".",
+            "Path": "FUNDRAISING"
+        },
+        {
+            "CourseID": "3001",
+            "CourseTitle": "Category Design Execution",
+            "CourseDescrip": "If you want people to know about and adopt your Category thinking, you'll need to communicate it! This segment is all about executing that communication.",
+            "Path": "CATEGORY DESIGN"
+        },
+        {
+            "CourseID": "3201",
+            "CourseTitle": "Contemporary AI Tools",
+            "CourseDescrip": "Get familiar with the latest AI tools and technologies. Knowing which tools are available and can be used in your business could be important to ensuring that you maintain your competitive edge.",
+            "Path": "FUNDAMENTALS"
+        },
+        {
+            "CourseID": "3401",
+            "CourseTitle": "M&amp;A for Founders",
+            "CourseDescrip": "Learn the basics of how potential acquirers think about your company and be ready to respond when you get an offer to buy your company!",
+            "Path": "FUNDAMENTALS"
+        }
+    ]
