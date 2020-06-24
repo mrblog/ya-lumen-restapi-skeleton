@@ -184,7 +184,7 @@ API Key and token in the places noted in the comments in the code.
 
 #### Adding an endpoint
 
-In ``routes/web.php` see the section:
+In `routes/web.php` see the section:
 
 ```
 $router->group(['prefix' => 'v1/'], function ($router) {
