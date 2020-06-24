@@ -51,6 +51,9 @@ class ExampleController extends Controller {
 }
 ```
 
+To create a new endpoint, we add a new Class in `app/Http/Controllers` (or add a function to an existing class) and 
+add a route in `routes/web.php` for it.
+
 #### Responses
 
 Note that all of our REST endpoints / controllers return JSON, using a common response format:
@@ -75,8 +78,8 @@ Note that all of our REST endpoints / controllers return JSON, using a common re
 }
 ```
 
-To create a new endpoint, we add a new Class in `app/Http/Controllers` (or add a function to an existing class) and 
-add a route in `routes/web.php` for it.
+An appropriate 2xx HTTP response code is returned on success while an
+appropriate non-2xx response code is returned on error.
 
 ### Authentication
 
@@ -122,6 +125,16 @@ We use a sample resource of a *course*, with properties "CourseID", "CourseTitle
 
 ### Test the V1 API
 
+#### Install dependencies
+
+Use composer to install dependencies:
+
+```
+composer install
+```
+
+#### Start the server
+
 For testing the REST API, we will use [PostMan](https://www.postman.com/).
 Before getting started with the testing, copy the `.env.example` file to `.env` and 
 run the following command inside the root of the project folder:
@@ -132,13 +145,13 @@ php -S localhost:8000 -t public
 
 #### Get a token using the API
 
-Now in PostMan, obtain a token with the email and password you used for the ToDo app.
+Now in PostMan, obtain a token from the API Key.
 
 Send a GET request to: http://localhost:8000/v1/token passing the API Key in the X-Api-Key header.
 
 ![getToken](screenshots/postman_token.png)
 
-You should receive a Success message along with the API Key.
+You should receive a Success message along with a token.
 
 #### Get all the courses
 
