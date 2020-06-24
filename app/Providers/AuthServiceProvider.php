@@ -34,11 +34,11 @@ class AuthServiceProvider extends ServiceProvider
         $this->app['auth']->viaRequest('v1', function ($request) {
             $token = $request->header('X-Token');
             $apiKey = $request->header('X-Api-Key');
-            error_log("AuthServiceProvider token: ".$token);
+            //error_log("AuthServiceProvider token: ".$token);
             if (!empty($token) && !empty($apiKey)) {
                 // validate key and token here
                 $request->request->add(['token', $token]);
-                error_log("AuthServiceProvider request: ".var_export($request->request, TRUE));
+                //error_log("AuthServiceProvider request: ".var_export($request->request, TRUE));
                 return new Session();
             }
 

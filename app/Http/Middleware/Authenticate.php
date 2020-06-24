@@ -38,11 +38,11 @@ class Authenticate
         //if ($this->auth->guard($guard)->guest()) {
         $token = $request->header('X-Token');
         $apiKey = $request->header('X-Api-Key');
-        error_log("Authenticate token: ".$token);
+        //error_log("Authenticate token: ".$token);
         if (!empty($token) && !empty($apiKey)) {
             // validate key and token here
             $request->request->add(['token' => $token]);
-            error_log("Authenticate request: " . var_export($request->all(), TRUE));
+            //error_log("Authenticate request: " . var_export($request->all(), TRUE));
         }
         //if (!array_key_exists('token', $request->all())) {
         if (!$request->has('token')) {
